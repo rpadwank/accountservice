@@ -13,8 +13,8 @@ public class CurrentAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public CurrentAccount(String accountHolderName, double accountBalance, double odLimit) {
-		super(accountHolderName, accountBalance);
+	public CurrentAccount(String accountHolderName, double accountBalance, String accountType, double odLimit) {
+		super(accountHolderName, accountBalance, accountType);
 		this.odLimit = odLimit;
 	}
 

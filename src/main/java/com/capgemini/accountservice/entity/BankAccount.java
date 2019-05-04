@@ -13,14 +13,16 @@ public class BankAccount {
 	private int accountNumber;
 	private String accountHolderName;
 	private double accountBalance;
+	private String accountType;
 	public BankAccount() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public BankAccount(String accountHolderName, double accountBalance) {
+	public BankAccount(String accountHolderName, double accountBalance, String accountType) {
 		super();
 		this.accountHolderName = accountHolderName;
 		this.accountBalance = accountBalance;
+		this.setAccountType(accountType);
 	}
 	public int getAccountNumber() {
 		return accountNumber;
@@ -40,10 +42,16 @@ public class BankAccount {
 	public void setAccountBalance(double accountBalance) {
 		this.accountBalance = accountBalance;
 	}
+	public String getAccountType() {
+		return accountType;
+	}
+	public void setAccountType(String accountType) {
+		this.accountType = accountType;
+	}
 	@Override
 	public String toString() {
 		return "BankAccount [accountNumber=" + accountNumber + ", accountHolderName=" + accountHolderName
-				+ ", accountBalance=" + accountBalance + "]";
+				+ ", accountBalance=" + accountBalance + ", accountType=" + accountType + "]";
 	}
 	
 	

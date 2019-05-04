@@ -13,8 +13,8 @@ public class SavingAccount extends BankAccount {
 		// TODO Auto-generated constructor stub
 	}
 
-	public SavingAccount(String accountHolderName, double accountBalance, boolean salary) {
-		super(accountHolderName, accountBalance);
+	public SavingAccount(String accountHolderName, double accountBalance, String accountType, boolean salary) {
+		super(accountHolderName, accountBalance, accountType);
 		this.salary = salary;
 	}
 
